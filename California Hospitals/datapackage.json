@@ -1,0 +1,125 @@
+{
+  "accrual_periodicity": "annually",
+  "additional_limitations": "",
+  "citation": "Department of Health Care Access and Information (HCAI) Annual Financial Disclosure Reports, Pivot Profiles 2009-2013",
+  "contact_email": "opendata@hcai.ca.gov",
+  "data_collection_tool": "http://hcai.ca.gov/HID/Products/Hospitals/AnnFinanData/forms/index.html",
+  "data_license": "Terms of Use",
+  "de_identification_method": "",
+  "description": "The dataset contains income statement information for all licensed, comparable hospitals in the state of California.  Kaiser hospitals, state mental hospitals, psychiatric health facilities, and hospitals with mainly long-term care patients are excluded.  Deductions from Revenue, Net Patient Revenue, Net from Operations (Operating Revenue less Operating Expense), and Net Income for public hospitals has been adjusted for Disproportionate Share intergovernmental transfers for funding the Disproportionate Share Hospital Program. The program gets federal matching funds to pay supplemental payments to hospitals with a disproportionate share of uninsured, underinsured, and Medi-Cal patients.  To link the OSHPD IDs with those from other Departments, like CDPH, please reference the \"Licensed Facility Cross-Walk\" Open Data table at https://data.chhs.ca.gov/dataset/licensed-facility-crosswalk.",
+  "geo_coverage": "Statewide",
+  "geographic_granularity": "location point",
+  "keywords": [
+    "hospital",
+    "income",
+    "ogi",
+    "operating margin",
+    "profitability"
+  ],
+  "limitations": "Limitations",
+  "name": "hospital-profitability-2009-2013",
+  "program_web_page": "http://hcai.ca.gov/HID/DataFlow/",
+  "related_resources": "HCAI Quarterly Financial & Utilization Reports: http://hcai.ca.gov/hid/Products/Hospitals/QuatrlyFinanData/CmpleteData/default  |  HCAI Quarterly Financial & Utilization Reports: http://hcai.ca.gov/hid/Products/Hospitals/QuatrlyFinanData/CmpleteData/default.asp  |  http://hcai.ca.gov/HID/Products/Hospitals/AnnFinanData/   |  http://hcai.ca.gov/HID/Products/Hospitals/AnnFinanData/",
+  "resources": [
+    {
+      "description": "The dataset contains income statement information for all licensed, comparable hospitals in the state of California.  Kaiser hospitals, state mental hospitals, psychiatric health facilities, and hospitals with mainly long-term care patients are excluded.  Deductions from Revenue, Net Patient Revenue, Net from Operations (Operating Revenue less Operating Expense), and Net Income for public hospitals has been adjusted for Disproportionate Share intergovernmental transfers for funding the Disproportionate Share Hospital Program. The program gets federal matching funds to pay supplemental payments to hospitals with a disproportionate share of uninsured, underinsured, and Medi-Cal patients.",
+      "format": "CSV",
+      "hash": "c0177774256ae2f28f5f7aa798315bb1",
+      "name": "hospital-profitability-2009-2013-csv",
+      "path": "hospital-profitability-2009-2013-.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "The calendar year in which the reported fiscal year end date falls.",
+            "name": "Year",
+            "title": "Year",
+            "type": "number"
+          },
+          {
+            "description": "A unique nine-digit identifier assigned to each facility by the Department of Health Care Access and Information (HCAI).  The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.  The last four-digits are unique within each county.",
+            "name": "Facility Number",
+            "title": "Facility Number",
+            "type": "number"
+          },
+          {
+            "description": "The hospital name.",
+            "name": "Facility Name",
+            "title": "Facility Name",
+            "type": "string"
+          },
+          {
+            "description": "The begin date of the hospital’s fiscal reporting period.",
+            "name": "Begin Date",
+            "title": "Begin Date",
+            "type": "datetime"
+          },
+          {
+            "description": "The end date of the hospital’s fiscal reporting period.",
+            "name": "End Date",
+            "title": "End Date",
+            "type": "datetime"
+          },
+          {
+            "description": "The name of the county where the hospital is located.  Total amounts are listed as Statewide.",
+            "name": "County Name",
+            "title": "County Name",
+            "type": "string"
+          },
+          {
+            "description": "The type of control (ownership type) of the hospital.",
+            "name": "Type of Control",
+            "title": "Type of Control",
+            "type": "string"
+          },
+          {
+            "description": "Description of the income statement item amount.  The item types are:\nGR_PT_REV – Gross Routine Patient Revenue\nDED_REV_PLUS_DSH – Deductions from Revenue plus Disproportionate Share Intergovernmental Transfer Amount\nTOT_CAP_REV – Total Capitation Revenue\nNET_REV_LESS_DSH – Net Patient Revenue less Disproportionate Share Intergovernmental Transfer Amount\nOTH_OP_REV – Other Operating Revenue\nTOT_OP_EXP – Total Operating Expense\nNET_OP_LESS_DSH – Net from Operations less Disproportionate Share Intergovernmental Transfer Amount\nNONOP_REV – Non-operating Revenue\nNONOP_EXP – Non-operating Expense\nINC_TAX – Income Tax\nEXT_ITEM – Extraordinary Items\nNET_INC_LESS_DSH – Net Income less Disproportionate Share Transfer Amount\nOPERATING_MARGIN -Net income from operations divided by total operating revenue (net patient revenue plus other operating revenue).  This ratio indicates the percentage of net patient revenue which remains as income after operating expenses.",
+            "name": "Income Statement Item",
+            "title": "Income Statement Item",
+            "type": "string"
+          },
+          {
+            "description": "The amount reported on the income statement for the item type.",
+            "name": "Income Statement Amount",
+            "title": "Income Statement Amount",
+            "type": "number"
+          },
+          {
+            "description": "The income statement item amount per adjusted patient day.  Adjusted patient days are calculated using the following formula:  Total gross patient revenue divided by gross inpatient revenue, times the number of patient days.  The purpose of \"adjusting\" the patient days is to recognize outpatient utilization.",
+            "name": "Amount per Adjusted Patient Day",
+            "title": "Amount per Adjusted Patient Day",
+            "type": "number"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/6acfdcc9-4a46-4703-abcc-f5d5177622cc/resource/2a3d5e7f-f1cf-4fb1-a245-c64930cbdd40/download/hospital-profitability-2009-2013.csv",
+          "title": "Hospital Profitability, 2009-2013 (CSV)"
+        }
+      ],
+      "title": "Hospital Profitability, 2009-2013 (CSV)"
+    },
+    {
+      "description": "The dataset contains income statement information for all licensed, comparable hospitals in the state of California.  Kaiser hospitals, state mental hospitals, psychiatric health facilities, and hospitals with mainly long-term care patients are excluded.  Deductions from Revenue, Net Patient Revenue, Net from Operations (Operating Revenue less Operating Expense), and Net Income for public hospitals has been adjusted for Disproportionate Share intergovernmental transfers for funding the Disproportionate Share Hospital Program. The program gets federal matching funds to pay supplemental payments to hospitals with a disproportionate share of uninsured, underinsured, and Medi-Cal patients.",
+      "format": "PDF",
+      "name": "data-dictionary-hospital-profitability-2009-2013",
+      "path": "data-dictionary-hospital-profitability-2009-2013.pdf",
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/6acfdcc9-4a46-4703-abcc-f5d5177622cc/resource/1cae312e-c1b1-4815-af06-ad87286add6e/download/ca-oshpd-data-dictionary-hospital-profitability.pdf",
+          "title": "data-dictionary-hospital-profitability-2009-2013"
+        }
+      ],
+      "title": "data-dictionary-hospital-profitability-2009-2013"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Department of Health Care Access and Information, Healthcare Information Division/Accounting & Reporting Systems Section",
+      "web": "http://hcai.ca.gov/HID/Products/Hospitals/AnnFinanData/PivotProfles/default.asp"
+    }
+  ],
+  "temporal_coverage": "2009-2013",
+  "title": "Hospital Profitability, 2009-2013"
+}

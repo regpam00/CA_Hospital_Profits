@@ -1,0 +1,24 @@
+Calculations for the hospital statement item:
+
+Description of the income statement item amount. 
+
+The item types are:
+GR_PT_REV – Gross Routine Patient Revenue
+DED_REV_PLUS_DSH – Deductions from Revenue plus Disproportionate Share Intergovernmental Transfer Amount
+TOT_CAP_REV – Total Capitation Revenue
+NET_REV_LESS_DSH – Net Patient Revenue less Disproportionate Share Intergovernmental Transfer Amount
+OTH_OP_REV – Other Operating Revenue
+TOT_OP_EXP – Total Operating Expense
+NET_OP_LESS_DSH – Net from Operations less Disproportionate Share Intergovernmental Transfer Amount
+NONOP_REV – Non-operating Revenue
+NONOP_EXP – Non-operating Expense
+INC_TAX – Income Tax
+EXT_ITEM – Extraordinary Items
+NET_INC_LESS_DSH – Net Income less Disproportionate Share Transfer Amount
+OPERATING_MARGIN -Net income from operations divided by total operating revenue (net patient revenue plus other operating revenue). This ratio indicates the percentage of net patient revenue which remains as income after operating expenses.
+
+GR_PT_REV + TOT_OP_EXP - DED_REV_PLUS_DSH = NET_REV_LESS_DSH 
+NET_REV_LESS_DSH + OTH_OP_REV - TOT_OP_EXP = NET_OP_LESS_DSH
+NET_OP_LESS_DSH + NONOP_REV + NONOP_EXP - INC_TAX + EXT_ITEM = NET_INC_LESS_DSH
+
+OPERATING_MARGIN = ((NET_OP_LESS_DSH)/(NET_REV_LESS_DSH + OTH_OP_REV)) * 100
